@@ -11,7 +11,9 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Spectral:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Spectral:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" 
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css" /> 
@@ -21,7 +23,7 @@
     <!-- Component 1: Header -->
     <header>
       <!-- Component 1-A MOBILE -->
-      <div id="component-3t-mobile-search-row" class="container">
+      <div id="component-3t-mobile-search-row" class="container ">
         
           <div class="row">
             <!-- Component 1: Menu Fullscreen -->
@@ -150,7 +152,7 @@
                       <i style="position:relative;right:37%;bottom:16px" class="fa-solid fa-x fa-2x  align-self-start" data-dismiss="modal"></i>
                       <p class="h-display-light search-modal" style="font-size:1.6em;">What are you looking for?</p>
                       <input type="email" class="form-control" id="modal-search-input" aria-describedby="emailHelp" placeholder="Search">  
-                  <button type="button" class="btn btn-primary" id="modal-search-btn"><b>SEARCH TRIALACADEMY.ORG </b><i class="fa-solid fa-magnifying-glass"></i></button>
+                  <button type="button" class="btn btn-primary" id="modal-search-btn">Search trialacademy.org <i class="fa-solid fa-magnifying-glass"></i></button>
                     </div>  
                   </form>
                 </div>
@@ -174,11 +176,12 @@
         <!-- END Mobile Menu-->
         
       <!-- /Component 1-A MOBILE -->
+
       <!-- Component 1-A Header Search Bar Row -->
-      <div id="component-3t-desktop-search-row" class="container">  <!-- Header search bar row desktop -->
-        <div id="header-search-row-desktop" class="row">
+      <div id="component-3t-desktop-search-row" class="container " style="max-width:1375px">  <!-- Header search bar row desktop -->
+        <div id="header-search-row-desktop" class="row w-100">
           <!-- Search Bar -->
-          <div class="col-3 col-sm-3 col-md-2 offset-md-1 col-lg-2 col-xl-2 ">
+          <div class="col-3 col-sm-3 col-md-2 offset-md-1 col-lg-2 col-xl-2 align-items-start">
             <div class="input-group">
               <div class="form-outline">
                 <input type="search" id="form1" class="form-control" placeholder="Search" /> <button style="float:right; position:relative;bottom:40px;" type="button" class="btn btn-primary">
@@ -197,9 +200,9 @@
           </div>
       <!-- /Logo col -->
       <!-- My Account col -->
-          <div class="col-3 col-sm-3 col-md-2  col-lg-3 offset-lg-1 col-xl-2">
+          <div class="col-3 col-sm-3 col-md-2  col-lg-3 offset-lg-1 col-xl-2" style="padding-right:0;padding-left:65px">
            
-            <button type="button" class="btn btn-primary">My Account<i class="fa-solid fa-user"></i></button>
+            <button id="my-account-btn" type="button" class="btn btn-primary">My Account<i class="fa-solid fa-user"></i></button>
         
         </div>
       <!-- / My Account col -->
@@ -208,15 +211,15 @@
       <!-- /END Header Search Bar Row -->
 
      <!-- Component 1-B Header Nav Bar Row -->
-        <nav style="max-width:1110px" id="main-navbar" class="navbar navbar-expand-md component-3t-desktop-navbar">
-
+        <!-- <nav style="max-width:1110px" id="main-navbar" class="navbar navbar-expand-md component-3t-desktop-navbar"> -->
+          <nav  id="main-navbar" class="navbar navbar-expand-md component-3t-desktop-navbar">
         <!-- <div class="container-fluid"> -->
          
           <button id="navbar-toggler-button" class="navbar-toggler  " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             
           </button>
           <div  class=" collapse navbar-collapse justify-content-center" id="navbarNavDropdown" >
-            <ul class="nav nav-fill">
+            <ul class="nav nav-fill w-100">
              
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -286,7 +289,7 @@
           <!-- Left Col (Img Promo-->
           <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 height-control">
             <div class="card text-bg-dark">
-              <img src="https://raw.githubusercontent.com/dev-3thought/static-page-testing/main/boro.png" class="card-img" alt="...">
+              <img src="/boro.png" class="card-img" alt="...">
               <div class="card-img-overlay">
                
               </div>
@@ -380,7 +383,7 @@
       <div class="col-12 col-sm-12 col-md-6 col-lg-9 col-xl-9">
         <h3 class="card-title h-display">Call to Action</h3>
         <p class="">Additional Instructions or Information to Guide User.</p></div>
-      <div class="col-3 col-sm-3 col-md-6 col-lg-3 col-xl-3"> <a href="#"><button class="btn btn-primary">Do This Thing</button></a> </div>
+      <div class="col-3 col-sm-3 col-md-6 col-lg-3 col-xl-3"> <a href="#"><button  class="btn btn-primary">Do This Thing</button></a> </div>
       
       </div>
       
@@ -398,7 +401,7 @@
 
 
 <!-- END Mobile Menu & Modals-->
-<!--  <div style="padding:25px" id="static-links">
+ <div style="padding:25px" id="static-links">
   <hr>
   <h3>Individual Components:</h3>
   <ul>
@@ -409,7 +412,7 @@
     <li> <a href="/triangles.html">Triangular Section Cutouts</a></li>
   </ul>
   
- </div> -->
+ </div>
 
 
  <script
