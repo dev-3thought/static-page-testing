@@ -49,7 +49,7 @@ border-bottom: 1px solid rgba(183,203,52,0.6);
   /* Additional CSS */
   header{
     /* background: url("https://trialacademy.org/userassets/NYSA/NYSA/userimages/banner.jpg"); */
-    background: url("/courthouse.png");
+    background: url("https://raw.githubusercontent.com/dev-3thought/static-page-testing/main/courthouse.png");
     background-repeat:no-repeat ;
     background-size: cover;
     padding: 20px 8%;
