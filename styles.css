@@ -10,6 +10,12 @@ body{
   font-family: 'Open Sans', sans-serif;
   color:#343A40;
 }
+.sans{
+  font-family: 'Open Sans', sans-serif !important;
+}
+.spectral{
+  font-family: 'Spectral SC', serif !important;
+}
 h1,h2{font-family: 'Spectral SC', serif;}
 h1{
 font-size:3.5em;
@@ -95,8 +101,9 @@ border-bottom: 1px solid rgba(183,203,52,0.6);
   }
   .dropdown-item:hover{
     background:#c6de29;
-    color:#1e4673;
+    color:#1e4673
   }
+  
   #navbarNavDropdown > .dropdown-toggle
   .card-body > p{
     font-size:1em ;
@@ -938,7 +945,7 @@ display:none;
 }
 
 @media(max-width:768px){
-  #main-navbar, .component-3t-desktop-navbar {
+  #main-navbar, .component-3t-desktop-navbar,.breakpt-lg {
 display:none !important;
   }
 }
@@ -949,7 +956,7 @@ display:none !important;
     }
   
 @media(min-width:768px){
-  #mobile-logo-row {
+  #mobile-logo-row,.breakpt-sm {
 display:none !important;
 /* margin-top:20px; */
   }
@@ -971,4 +978,26 @@ display:none !important;
 
 .card{
   background:rgba(255, 255, 255, 0.792)
+}
+@media(min-width:768px){
+  .promo-content-float-left
+  {
+    max-height:25%;width:100%;position:relative;right:20%;top:70%;
+/* margin-top:20px; */
+  }
+}
+@media(max-width:768px){
+  .promo-content-float-left-p
+  {
+   font-size:18px
+/* margin-top:20px; */
+  }
+}
+
+@media(max-width:768px){
+  .promo-content-float-left-h3
+  {
+   font-size:2em
+/* margin-top:20px; */
+  }
 }
