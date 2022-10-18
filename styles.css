@@ -93,7 +93,10 @@ border-bottom: 1px solid rgba(183,203,52,0.6);
   .dropdown-item{
     color:#fff;
   }
-  
+  .dropdown-item:hover{
+    background:#c6de29;
+    color:#1e4673;
+  }
   #navbarNavDropdown > .dropdown-toggle
   .card-body > p{
     font-size:1em ;
