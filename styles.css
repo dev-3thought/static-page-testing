@@ -963,7 +963,8 @@ display:none !important;
   }
   .promo-content-float-left-p-2
   {
-   font-size:20px
+   font-size:20px;
+     color:#fff;
 
   }
 /* } */
