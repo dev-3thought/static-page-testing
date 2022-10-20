@@ -70,9 +70,11 @@
 --unnamed-line-spacing-54-6: 54.6px;
 --unnamed-line-spacing-58-79999923706055: 58.79999923706055px;
 /*  */
---md-breakpoint-promo-block-row-height:310px;
+--md-breakpoint-promo-block-row-height:250px;
 --lg-breakpoint-promo-block-row-height:345px;
 --xl-breakpoint-promo-block-row-height:345px;
+--md-breakpoint-promo-block-upper-row-height:370px;
+--xl-breakpoint-promo-block-full-container-height:570px
 }
 
 /* Character Styles */
@@ -324,7 +326,7 @@ max-height:100%;
       }
       @media(min-width:992px){
         .component-3t-boro-bash, .component-3t-boro-bash img{
-          min-height:570px
+          /* min-height:570px */
   
         }
       }
@@ -924,13 +926,13 @@ border:none}
 line-height:22px !important;
 }
 
-@media(max-width:768px){
+@media(max-width:959px){
   .card-title, .h-display{
     font-size:28px !important;
     line-height:43px !important;
   }
 }
-@media(max-width:768px){
+@media(max-width:959px){
   .card p{
     font-size:16px ;
     line-height:22px ;
@@ -991,17 +993,24 @@ display:none !important;
   .card-img,.card-img-overlay,.component-3t-card-standard .card-body{
     height:var(--lg-breakpoint-promo-block-row-height);
   }
+  #component-3t-login{
+    height:var(--lg-breakpoint-promo-block-row-height);
+      }
 }
 @media (min-width: 1140px) {
-  .card-img,.card-img-overlay,.component-3t-card-standard .card-body{
+  .component-3t-card-standard .card-body{
     height:var(--xl-breakpoint-promo-block-row-height);
+  }
+  .card-img{
+    height:var(--xl-breakpoint-promo-block-full-container-height);
+   
   }
 }
 @media (min-width: 768px) and (max-width: 991px) { 
-  #component-3t-login{
-height:var(--md-breakpoint-promo-block-row-height);
+  .card-img,#component-3t-login{
+height:var(--md-breakpoint-promo-block-upper-row-height);
   }
-  .card-img,.component-3t-card-standard .card-body{
+.component-3t-card-standard .card-body{
     height:var(--md-breakpoint-promo-block-row-height);
   }
  
@@ -1022,7 +1031,7 @@ letter-spacing: var(--unnamed-character-spacing-0);
 #promo-blocks-only-md{
   display:none;
 }
-@media (min-width: 768px) and (max-width: 991.98px) { 
+@media (min-width: 768px) and (max-width: 1139px) { 
   #promo-blocks-only-md{
 display:flex;
   }
@@ -1030,7 +1039,7 @@ display:flex;
  }
 
 
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media (min-width: 768px) and (max-width: 1139px) {
   #promo-blocks-no-md{
 display:none
   }
