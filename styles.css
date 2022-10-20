@@ -69,6 +69,10 @@
 --unnamed-line-spacing-28-8: 28.8px;
 --unnamed-line-spacing-54-6: 54.6px;
 --unnamed-line-spacing-58-79999923706055: 58.79999923706055px;
+/*  */
+--md-breakpoint-promo-block-row-height:310px;
+--lg-breakpoint-promo-block-row-height:345px;
+--xl-breakpoint-promo-block-row-height:345px;
 }
 
 /* Character Styles */
@@ -193,12 +197,13 @@ font: normal normal normal;
   padding:0;
   box-sizing:border-box;
 }
-html{
-  /* font-size:62.5% */
+html,body{
+  overflow-x:hidden !important;
 }
 body{
   font-family: 'Open Sans', sans-serif;
   color:#343A40;
+  
 }
 .sans{
   font-family: 'Open Sans', sans-serif !important;
@@ -293,10 +298,12 @@ max-width:1108px;
 }
 
 
- .component-3t-login{
+ #component-3t-login{
 background: #B5EEFFCC 0% 0% no-repeat padding-box !important;
 opacity: 1 ;
+/* height:330px; */
 min-height:202px;
+max-height:100%;
 
       }
       @media(min-width:1100px){
@@ -310,14 +317,14 @@ min-height:202px;
           }
           }
       @media(min-width:992px){
-        .component-3t-login .card-body{
+        #component-3t-login .card-body{
           position:absolute;
           top:15px
         }
       }
       @media(min-width:992px){
         .component-3t-boro-bash, .component-3t-boro-bash img{
-          min-height:550px
+          min-height:570px
   
         }
       }
@@ -972,6 +979,65 @@ display:none !important;
     font-weight: 200 !important;
   }
 }
+
+
+#search-input-tablet{
+  display:none ;
+}
+
+/* Header & Promo Blocks Tablet View Media Query Adjustments */
+
+@media (min-width: 960px) and (max-width: 1139px) {
+  .card-img,.card-img-overlay,.component-3t-card-standard .card-body{
+    height:var(--lg-breakpoint-promo-block-row-height);
+  }
+}
+@media (min-width: 1140px) {
+  .card-img,.card-img-overlay,.component-3t-card-standard .card-body{
+    height:var(--xl-breakpoint-promo-block-row-height);
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) { 
+  #component-3t-login{
+height:var(--md-breakpoint-promo-block-row-height);
+  }
+  .card-img,.component-3t-card-standard .card-body{
+    height:var(--md-breakpoint-promo-block-row-height);
+  }
+ 
+  #main-navbar{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-24) var(--unnamed-font-family-open-sans);
+letter-spacing: var(--unnamed-character-spacing-0);
+  }
+.nav-link{ padding-left:0;padding-right:0}
+#search-input-desktop{
+  display:none;
+}
+#search-input-tablet{
+  display:block;
+}
+ }
+
+
+#promo-blocks-only-md{
+  display:none;
+}
+@media (min-width: 768px) and (max-width: 991.98px) { 
+  #promo-blocks-only-md{
+display:flex;
+  }
+  
+ }
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #promo-blocks-no-md{
+display:none
+  }
+ }
+
+/* End Tablet-Specific queries */
+
 
 .card{
   background:rgba(255, 255, 255, 0.792)
